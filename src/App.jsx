@@ -111,7 +111,7 @@ const Calcul = () => {
     <>
 
 <div style={{height:'100vh'}} className='bg-dark w-100 d-flex justify-content-center align-items-center'>
-      <div style={{width:'500px'}} className='p-5 bg-light  rounded'>
+      <div id='divr' className=' p-5 bg-light  rounded'>
       <h1 className='text-center'>BODY MASS INDEX CALCULATOR</h1>
       <p className='text-center'>Know your Weight Class</p>
       <div style={{height:'150px'}} className='bg-dark rounded d-flex justify-content-center align-items-center flex-column'>
@@ -132,7 +132,7 @@ const Calcul = () => {
         
         </div>
         <div className='mb-3 d-flex justify-content-between'> 
-          <Button style={{width:'190px', height:'60px'}} onClick={Calcul} variant="contained" color='success' disabled={isweight && isheight ? false : true}>Calculate</Button>
+          <Button className='me-2' style={{width:'190px', height:'60px'}} onClick={Calcul} variant="contained" color='success' disabled={isweight && isheight ? false : true}>Calculate</Button>
         <Button style={{width:'190px', height:'60px'}}   variant="contained" color='warning' onClick={resethandle}>Reset</Button>
         </div>
        
